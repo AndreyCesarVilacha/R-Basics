@@ -31,3 +31,8 @@ Greeting <- function(fname){
   paste("Hello ", fname)
 }
 Greeting("Andrey")
+
+#Installing packages
+install.packages("ggplot2")
+#Enabling the package on the code
+library(ggplot2)
