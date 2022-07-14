@@ -38,3 +38,18 @@ Bravo <- matrix(temp.vec,3,3)
 rownames(Bravo) <- c("How", "are", "you?")
 colnames(Bravo) <- c("X", "Y", "Z")
 
+#Using matplot
+matplot(t(FieldGoals), type="b", pch=15:18, col=c(1:4,6))
+legend("bottomleft", 
+       inset=0.01, 
+       legend=Players, 
+       col=c(1:4,6), 
+       pch=15:18, 
+       horiz = F)
+
+#Subsetting
+Games[1:3,6:10]
+Games[c(1,10),]
+Games[,c("2008","2009")]
+#Making analyse of a single row in R, using "drop = F", otherwise became a vector
+Games[1,,drop=F]
