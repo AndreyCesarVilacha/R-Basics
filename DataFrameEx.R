@@ -35,3 +35,13 @@ stats$Internet.users
 filterDF <- stats$Internet.users < 2
 stats[filterDF,]
 stats[stats$Country.Name == "Malta",]
+
+#Downloading and installing ggplot2
+install.packages("ggplot2")
+library(ggplot2)
+
+#Using ggplot2
+qplot(data=stats, x=Internet.users)
+qplot(data=stats, x=Income.Group, y=Birth.rate, size=I(3), colour=I("blue"))
+qplot(data=stats, x=Income.Group, y=Birth.rate, geom="boxplot")
+qplot(data=stats, x=Internet.users, y=Birth.rate, size=I(4), colour=Income.Group)
