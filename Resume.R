@@ -103,3 +103,45 @@
 #   print(x)
 #}
 
+#------------------------Functions----------------------------
+
+#my_function <- function(){
+#   #Code of block
+#}
+
+#my_function()
+
+#my_params <- function(fname){
+#   paste(fname, "Griffin")
+#}
+#my_params("Peter")
+
+#my_function <- function(x) {
+#  return (5 * x)
+#}
+
+#my_function <- function(country = "Norway") {
+#  paste("I am from", country)
+#}
+
+#------------------------Advance Vector----------------------------
+
+#Sequence: v <- 5:13
+#sequence with steps: seq(5, 9, by = 0.4)
+#Accessing vector: v[1] or v[c(2,3,6)]
+#Sorting: sort(v)
+#Sorting in reverse order: sort(v, decreasing = TRUE)
+#Vector length: length(v)
+#repeat each element in vector: rep(c(1,2,3), each = 3)
+#sequence with step: seq(from = 0, to = 100, by = 20)
+
+#------------------------Advance Matix----------------------------
+
+#Accessing matrix: thismatrix[1, 2]
+#Accessing more tha one row: thismatrix[c(1,2),]
+#Accessing more tha one column: thismatrix[, c(1,2)]
+#Add new column: newmatrix <- cbind(thismatrix, c("strawberry", "blueberry", "raspberry"))
+#Add new row: newmatrix <- rbind(thismatrix, c("strawberry", "blueberry", "raspberry"))
+#Removing rows and columns: thismatrix <- thismatrix[-c(1), -c(1)]
+#Check if an item exists: "apple" %in% thismatrix
+#number of rows and columns in a matrix: dim(thismatrix)
