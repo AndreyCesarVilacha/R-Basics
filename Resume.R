@@ -145,3 +145,37 @@
 #Removing rows and columns: thismatrix <- thismatrix[-c(1), -c(1)]
 #Check if an item exists: "apple" %in% thismatrix
 #number of rows and columns in a matrix: dim(thismatrix)
+
+#------------------------Advance Data frames----------------------------
+
+#Summarize the data: summary(Data_Frame)
+#Accessing items by name: Data_Frame[["Training"]]
+#Adding a row: New_row_DF <- rbind(Data_Frame, c("Strength", 110, 110))
+#Adding a column: New_col_DF <- cbind(Data_Frame, Steps = c(1000, 6000, 2000))
+#Removing a column and a row: Data_Frame_New <- Data_Frame[-c(1), -c(1)]
+#Dimension of data frame: dim(Data_Frame)
+#Finding the numbers of columns: ncol(Data_Frame)
+#Finding the numbers of rows: nrow(Data_Frame)
+
+#--------------------------Factor----------------------------------------
+
+#Creating a factor: factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", "Rock", "Jazz"))
+#Factor length: length(music_genre)
+#Accessing factor: music_genre[3]
+
+#--------------------------Package----------------------------------------
+
+#Install a package: install.packages("ggplot2")
+#Bring it into env: libray("ggplot2")
+
+#--------------------------CSV----------------------------------------
+
+#Reading a csv: data <- read.csv("input.csv")
+#Checking if is a data frame: is.data.frame(data)
+
+#--------------------------Json----------------------------------------
+
+#Install package: install.packages("rjson")
+#Import package: library("rjson")
+#Reading a json: result <- fromJSON(file = "input.json")
+#Converting into a data frame: json_data_frame <- as.data.frame(result)
