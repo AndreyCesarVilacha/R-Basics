@@ -69,3 +69,37 @@
 #Operator to identify if element belong to a vector: %in%
 #Multiply matrix with its transpose: %*%
 
+#------------------------Math Functions----------------------------
+
+#max valor from a vector: max(5,3,7)
+#min valor from a vector: min(1,5,9)
+#Square root: sqrt(16)
+#Absolute value of a number: abs(-26)
+#Round a number upwards: ceiling(5.4)
+#Round a number downwards: floor(5.4)
+
+#------------------------String operations----------------------------
+
+#numbers of characters in a string: nchar("Hello!")
+#Checking if a character or sequence of char are present: grepl("l", var)
+#Combine two strings: paste(var1, var2)
+
+#------------------------Loops and Decision makers----------------------------
+
+#if(a>b){
+#   #code block
+#} else if (a == b){
+#   #code block
+#} else{
+#   #Code block
+#}
+
+#while(i < 6){
+#   print(i)
+#   i <- i +1
+#}
+
+#for(x in 1:10){
+#   print(x)
+#}
+
