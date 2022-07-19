@@ -47,3 +47,29 @@ complete.cases(fin)
 which(fin$Profit == 8553827)
 which(fin$Profit == 68862)
 
+#Filtering using is.na() for missing data
+is.na(fin)
+
+#Removing records with missing data
+fin_backup <- fin
+
+fin[is.na(fin$Profit),]
+fin <- fin[!is.na(fin$Profit),]
+
+#Replacing missing data: factual analysis
+fin[!complete.cases(fin),]
+
+fin[is.na(fin$State),]
+fin[is.na(fin$State) & fin$State == "New York","State"] <- NY
+
+#Replacing missing data: median imputation method
+fin[!complete.cases(fin),]
+
+med_empl_retail <- media(fin[fin$Industry == "Retail","Employees"], na.rn=TRUE)
+
+fin[is.na(fin$Employees) & fin$Industry == "Retail",]
+fin[is.na(fin$Employees) & fin$Industry == "Retail", "Employees"] <- med_empl_retail
+
+med_empl_finserv <- median(fin[fin$Industry == "Financial Services", "Employees"], na.rm = TRUE)
+
+
