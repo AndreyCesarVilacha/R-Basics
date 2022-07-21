@@ -279,3 +279,6 @@
 #Where on data set if max value: which.max(Data_Cars$hp)
 #Where on data set if min value: which.min(Data_Cars$hp)
 #The mean value of a column:  mean(Data_Cars$wt)
+#The median of a column: median(Data_Cars$wt)
+#The mode of a column: names(sort(-table(Data_Cars$wt)))[1]
+#Getting the percentile from a column: quantile(Data_Cars$wt, c(0.75))
