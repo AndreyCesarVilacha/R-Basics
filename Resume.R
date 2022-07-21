@@ -382,3 +382,39 @@
 # Find 8 random values from a sample of 150 with probability of 0.4.
 #x <- rbinom(8,150,.4)
 
+#-------------------------Poisson Regression-----------------------------------
+
+#the syntax of glm()
+#glm(formula,data,family)
+
+#formula is the symbol presenting the relationship between the variables.
+#data is the data set giving the values of these variables.
+#family is R object to specify the details of the model. It's value is 'Poisson' 
+#for Logistic Regression.
+#EX: output <-glm(formula = breaks ~ wool+tension, data = warpbreaks,
+#family = poisson)
+
+#-------------------------Analysis of Covariance-------------------------------
+
+#Taking a input
+#input <- mtcars[,c("am","mpg","hp")]
+
+#Model with interaction between categorical variable and predictor variable
+# Create the regression model.
+#result <- aov(mpg~hp*am,data = input)
+#print(summary(result))
+
+#Model without interaction between categorical variable and predictor variable
+# Get the dataset.
+#input <- mtcars
+# Create the regression model.
+#result <- aov(mpg~hp+am,data = input)
+
+#Comparing Two Models
+# Create the regression models.
+#result1 <- aov(mpg~hp*am,data = input)
+#result2 <- aov(mpg~hp+am,data = input)
+# Compare the two models.
+#print(anova(result1,result2))
+
+#---------------------------Time Series Analysis-------------------------------
