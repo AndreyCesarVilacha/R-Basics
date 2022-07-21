@@ -356,3 +356,29 @@
 # Plot the histogram for this sample.
 #hist(y, main = "Normal DIstribution")
 
+#-------------------------Binomial Distribution--------------------------------
+
+#dbinom() gives the probability density distribution at each point.
+# Create a sample of 50 numbers which are incremented by 1.
+#x <- seq(0,50,by = 1)
+# Create the binomial distribution.
+#y <- dbinom(x,50,0.5)
+# Plot the graph for this sample.
+#plot(x,y)
+
+#pbinom() gives the cumulative probability of an event. It is a single value 
+#representing the probability.
+# Probability of getting 26 or less heads from a 51 tosses of a coin.
+#x <- pbinom(26,51,0.5)
+
+#qbinom() takes the probability value and gives a number whose cumulative value 
+#matches the probability value.
+# How many heads will have a probability of 0.25 will come out when a coin
+# is tossed 51 times.
+#x <- qbinom(0.25,51,1/2)
+
+#rbinom() generates required number of random values of given probability 
+#from a given sample.
+# Find 8 random values from a sample of 150 with probability of 0.4.
+#x <- rbinom(8,150,.4)
+
