@@ -179,3 +179,71 @@
 #Import package: library("rjson")
 #Reading a json: result <- fromJSON(file = "input.json")
 #Converting into a data frame: json_data_frame <- as.data.frame(result)
+
+#--------------------------Plot----------------------------------------
+
+#A simple plot: plot(1, 3)
+#Two points in a plot: plot(c(1, 8), c(3, 10))
+#Multiple points in a plot: plot(c(1, 2, 3, 4, 5), c(3, 7, 8, 9, 12))
+
+#Creating x and y in a plor
+#x <- c(1, 2, 3, 4, 5)
+#y <- c(3, 7, 8, 9, 12)
+#plot(x, y)
+
+#Sequence of points: plot(1:10)
+#Draw a line: plot(1:10, type="l")
+
+#Putting names o x label and y label
+#plot(1:10, main="My Graph", xlab="The x-axis", ylab="The y axis")
+
+#Changing the color of the plots: plot(1:10, col="red")
+
+#Size of plot: plot(1:10, cex=2)
+#1 is default, 0.5 is 50% smaller and 2 is 100% larger
+
+#Shape of point: plot(1:10, pch=25, cex=2)
+# pch goes from 0 to 25
+
+#Width the line plot: plot(1:10, type="l", lwd=2)
+#Line style: plot(1:10, type="l", lwd=5, lty=3)
+
+#Making multiples line
+#line1 <- c(1,2,3,4,5,10)
+#line2 <- c(2,5,7,8,9,10)
+#plot(line1, type = "l", col = "blue")
+#lines(line2, type="l", col = "red")
+
+#Comparing scatter plots
+# day one, the age and speed of 12 cars:
+#x1 <- c(5,7,8,7,2,2,9,4,11,12,9,6)
+#y1 <- c(99,86,87,88,111,103,87,94,78,77,85,86)
+# day two, the age and speed of 15 cars:
+#x2 <- c(2,2,8,1,15,8,12,9,7,3,11,4,7,14,12)
+#y2 <- c(100,105,84,105,90,99,90,95,94,100,79,112,91,80,85)
+#plot(x1, y1, main="Observation of Cars", xlab="Car age", ylab="Car speed", col="red", cex=2)
+#points(x2, y2, col="blue", cex=2)
+
+#pie char
+#x <- c(10,20,30,40)
+#pie(x)
+
+#The start angle from a pie chart
+#x <- c(10,20,30,40)
+#pie(x, init.angle = 90)
+
+#Creating labels for pie chart
+#x <- c(10,20,30,40)
+#mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+#pie(x, label = mylabel, main = "Fruits")
+
+#Colors of pie chart
+#colors <- c("blue", "yellow", "green", "black")
+#pie(x, label = mylabel, main = "Fruits", col = colors)
+
+#Creating a legend for pie chart
+#mylabel <- c("Apples", "Bananas", "Cherries", "Dates")
+#colors <- c("blue", "yellow", "green", "black")
+#pie(x, label = mylabel, main = "Pie Chart", col = colors)
+#legend("bottomright", mylabel, fill = colors)
+
