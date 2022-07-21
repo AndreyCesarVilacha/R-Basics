@@ -247,3 +247,35 @@
 #pie(x, label = mylabel, main = "Pie Chart", col = colors)
 #legend("bottomright", mylabel, fill = colors)
 
+#bar Chart
+#x <- c("A", "B", "C", "D")
+#y <- c(2, 4, 6, 8)
+#barplot(y, names.arg = x)
+
+#bar colors
+#x <- c("A", "B", "C", "D")
+#y <- c(2, 4, 6, 8)
+#barplot(y, names.arg = x, col = "red")
+
+#Bar Density/Texture
+#x <- c("A", "B", "C", "D")
+#y <- c(2, 4, 6, 8)
+#barplot(y, names.arg = x, density = 10)
+
+#Bar width
+#x <- c("A", "B", "C", "D")
+#y <- c(2, 4, 6, 8)
+#barplot(y, names.arg = x, width = c(1,2,3,4))
+
+#Horizontal bar
+#x <- c("A", "B", "C", "D")
+#y <- c(2, 4, 6, 8)
+#barplot(y, names.arg = x, horiz = TRUE)
+
+#--------------------------Statistics----------------------------------------
+
+#minimum value from a data set: min(Data_Cars$hp)
+#max value from a data set: max(Data_Cars$hp)
+#Where on data set if max value: which.max(Data_Cars$hp)
+#Where on data set if min value: which.min(Data_Cars$hp)
+#The mean value of a column:  mean(Data_Cars$wt)
