@@ -282,3 +282,32 @@
 #The median of a column: median(Data_Cars$wt)
 #The mode of a column: names(sort(-table(Data_Cars$wt)))[1]
 #Getting the percentile from a column: quantile(Data_Cars$wt, c(0.75))
+
+#-------------------------Linear Regression------------------------------------
+
+#Input data
+# Values of height
+#x <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+# Values of weight.
+#y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+
+#Using lm() function
+#relation <- lm(y~x)
+#relation <- lm(y~x)
+
+#Making a prediction
+#x <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+#y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+#relation <- lm(y~x)
+#a <- data.frame(x = 170)
+#result <-  predict(relation,a)
+#print(result)
+
+#Plotting the result
+#x <- c(151, 174, 138, 186, 128, 136, 179, 163, 152, 131)
+#y <- c(63, 81, 56, 91, 47, 57, 76, 72, 62, 48)
+#relation <- lm(y~x)
+#plot(y,x,col = "blue",main = "Height & Weight Regression",
+#     abline(lm(x~y)),cex = 1.3,pch = 16,xlab = "Weight in Kg",ylab = "Height in cm")
+
+#-------------------------Logistic Regression----------------------------------
