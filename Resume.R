@@ -311,3 +311,12 @@
 #     abline(lm(x~y)),cex = 1.3,pch = 16,xlab = "Weight in Kg",ylab = "Height in cm")
 
 #-------------------------Logistic Regression----------------------------------
+
+# Select some columns form mtcars.
+#input <- mtcars[,c("am","cyl","hp","wt")]
+
+#Creating a regression model
+#input <- mtcars[,c("am","cyl","hp","wt")]
+#am.data = glm(formula = am ~ cyl + hp + wt, data = input, family = binomial)
+
+#-------------------------Normal Distribution----------------------------------
